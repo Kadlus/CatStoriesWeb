@@ -1,3 +1,7 @@
+/*
+https://nicepage.com/ht/3444245/cat-stories-tips-and-tricks-html-template
+ */
+
 :root {
     --primary-color: #000000;
     --secondary-color: #ffff;
@@ -135,7 +139,7 @@ body {
 .more-link {
     text-decoration: none;
     position: relative;
-    font-size: 22px;
+    font-size: 20px;
     text-transform: uppercase;
     color: var(--light-brown);
 }
@@ -150,7 +154,7 @@ body {
     right: 0;
     width: 100%;
     background: var(--light-brown);
-    transition:.5s;
+    transition: .5s;
 }
 
 .more-link:hover:after {
@@ -175,7 +179,7 @@ body {
 .cat-blog {
     background-color: #332c29;
     width: 20%;
-    padding: 20px;
+    padding: 40px;
     color: var(--secondary-color);
     border-radius: 20px;
     position: relative;
@@ -212,7 +216,7 @@ body {
     position: relative;
     top: 30%;
     left: 48%;
-    box-shadow: 5px 0px 12px 10px rgba(214,214,214,1);
+    box-shadow: 5px 5px 20px 0 rgba(0, 0, 0, 0.15);
 }
 
 .cat-care h2 {
@@ -254,8 +258,8 @@ body {
     display: flex;
     justify-content: center;
     padding: 20px;
-    height: 1200px;
-    background: var(--dark-brown);
+    height: 1000px;
+    background: var(--light-brown);
     position: relative;
 }
 
@@ -264,20 +268,32 @@ body {
     grid-template-columns: repeat(2, 1fr);
     grid-auto-rows: 1fr;
     gap: 40px;
-    max-width: 800px;
+    max-width: 900px;
     position: absolute;
     top: -20%;
 }
 
 .gallery-item {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-    text-align: center;
+    text-align: left;
     background: #f5f5f5;
     border-radius: 20px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    box-shadow: 5px 5px 20px 0 rgba(0, 0, 0, 0.15);
+}
+
+.gallery-item h3 {
+    font-size: 30px;
+}
+
+.gallery-item p {
+    font-size: 20px;
+    line-height: 1.5;
+    margin-bottom: 40px;
+    margin-top: 20px;
+}
+
+.gallery-item:nth-child(4) {
+    padding: 40px 20px 40px 20px;
+    box-shadow: 5px 5px 20px 0 rgba(0, 0, 0, 0.15);
 }
 
 .gallery-item img {
@@ -285,4 +301,142 @@ body {
     height: 100%;
     object-fit: cover;
     border-radius: 20px;
+}
+
+.subscribe-section {
+    background: var(--light-brown);
+    text-align: center;
+    color: var(--secondary-color);
+}
+
+.subscribe-section img {
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+    border: 9px solid var(--light-grey);
+}
+
+.subscribe-section h2 {
+    font-size: 48px;
+    margin-bottom: 40px;
+    margin-top: 40px;
+}
+
+.subscribe-section input[type="email"] {
+    width: 300px;
+    padding: 14px;
+    border-radius: 24px;
+    border: none;
+}
+
+.subscribe-section input[type="button"] {
+    width: 150px;
+    padding: 14px;
+    border-radius: 24px;
+    color: var(--secondary-color);
+    background: var(--dark-brown);
+    text-transform: uppercase;
+    border: none;
+    opacity: 0.7;
+}
+
+.subscribe-section input[type="button"]:hover {
+    color: var(--primary-color);
+    background: var(--light-grey);
+    cursor: pointer;
+}
+
+.subscribe-section p {
+    padding-top: 40px;
+    padding-bottom: 40px;
+    font-size: 20px;
+}
+
+.cat-tips-container {
+    height: 800px;
+    background: var(--light-brown);
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+
+.cat-tips {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    max-width: 40%;
+    gap: 40px;
+    position: relative;
+    top: 75%;
+    left: -6%;
+}
+
+.cat-tips-img {
+    position: relative;
+    top: 25%
+}
+
+.cat-tip {
+    background: var(--secondary-color);
+    border-radius: 20px;
+    padding: 30px 20px 30px 20px;
+    box-shadow: 5px 5px 20px 0 rgba(0, 0, 0, 0.15);}
+
+.cat-tip h2 {
+    font-size: 20px;
+    margin-bottom: 24px;
+    color: var(--light-brown);
+    text-transform: uppercase;
+}
+
+.cat-tip p {
+    font-size: 18px;
+    line-height: 1.5;
+    margin-bottom: 24px;
+}
+
+.keep-pet-happy-container {
+    height: 800px;
+    width: 75%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    gap: 40px;
+}
+
+.keep-pet-happy-container .left-side {
+    min-width: 45%;
+    max-width: 374px;
+}
+
+.keep-pet-happy-container .left-side h2 {
+    font-size: 34px;
+}
+
+.keep-pet-happy-container .left-side p {
+    font-size: 20px;
+    margin-bottom: 40px;
+    margin-top: 20px;
+    line-height: 2;
+}
+
+.keep-pet-happy-container .right-side {
+    width: auto;
+    position: relative;
+}
+
+.keep-pet-happy-container .right-side img {
+    max-width: 374px;
+    height: auto;
+}
+
+.brown-shape {
+    width: 374px;
+    height: 300px;
+    background: var(--light-grey);
+    position: absolute;
+    top: -30%;
+    left: 40%;
+    z-index: -1;
 }
