@@ -12,6 +12,9 @@ https://nicepage.com/ht/3444245/cat-stories-tips-and-tricks-html-template
     --light-grey: #ded9d7;
 }
 
+* {
+    box-sizing: border-box;
+}
 
 body {
     margin: 0;
@@ -280,13 +283,14 @@ body {
 .gallery-items {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    grid-auto-rows: 1fr;
+    grid-auto-rows: minmax(auto, 1fr);
     gap: 40px;
     max-width: 900px;
     width: 70%;
     position: relative;
     top: -200px;
 }
+
 
 .gallery-item {
     text-align: left;
@@ -342,6 +346,7 @@ body {
 .subscribe-section input[type="email"] {
     width: 300px;
     padding: 14px;
+    margin-bottom: 24px;
     border-radius: 24px;
     border: none;
 }
@@ -391,7 +396,7 @@ body {
     gap: 40px;
     position: relative;
     top: 75%;
-    left: -6%;
+    left: -15%;
 }
 
 .cat-tips-img {
@@ -460,15 +465,17 @@ body {
 .keep-pet-happy-container .right-side img {
     max-width: 374px;
     height: auto;
+    border-radius: 50%;
 }
 
 .brown-shape {
     width: 374px;
-    height: 300px;
+    height: 320px;
+    border-radius: 50%;
     background: var(--light-grey);
     position: absolute;
-    top: -30%;
-    left: 30%;
+    top: -20%;
+    left: 15%;
     z-index: -1;
 }
 
@@ -476,7 +483,7 @@ body {
     position: relative;
     top: 100px;
     display: flex;
-    width: 50%;
+    width: 60%;
     margin: auto;
     gap: 40px;
     box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2);
@@ -576,8 +583,16 @@ input:focus {
 }
 
 .main-footer {
-    min-height: 200px;
+    min-height: 100px;
     background: var(--dark-brown);
+    text-align: center;
+    color: var(--secondary-color);
+    padding: 40px;
+}
+
+.main-footer p {
+    margin: 0;
+    font-size: 20px;
 }
 
 @media screen and (max-width: 1200px) {
@@ -602,6 +617,7 @@ input:focus {
 
     .gallery-items {
         grid-template-columns: repeat(1, 1fr);
+        grid-auto-rows: minmax(auto, auto);
     }
 
     .cat-tips-container {
@@ -640,20 +656,16 @@ input:focus {
 
 @media screen and (max-width: 996px) {
 
-    .keep-pet-happy-container .right-side img {
-        max-width: 70%;
-    }
-
     .nav-link a {
         font-size: 20px;
     }
 
-    .keep-pet-happy-container .left-side {
+    .keep-pet-happy-container .right-side {
         max-width: 90%;
     }
 
-    .keep-pet-happy-container .right-side {
-        max-width: 90%;
+    .about-section p {
+        width: 75%;
     }
 }
 
@@ -665,6 +677,10 @@ input:focus {
     .nav-links {
         flex-direction: column;
         width: 100%;
+    }
+
+    .about-section {
+        height: 600px;
     }
 
     .cat-blog-container {
