@@ -710,3 +710,16 @@ input:focus {
         flex-direction: column;
     }
 }
+
+@media screen and  (max-width: 576px) {
+
+    .keep-pet-happy-container .right-side img {
+        width: 220px;
+        height: auto;
+    }
+
+    .brown-shape {
+        width: 220px;
+        height: 190px;
+    }
+}
